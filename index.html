@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pan Update Form</title>
+    <style>
+        span {
+            color: red;
+        }
+
+        table,
+        tr,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        * {
+            margin: 1px 1px 1px 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: #ffffdd">
+        <div style="background-color: #8b1f1f; text-align: center; color: white">
+            <h5 style="margin-bottom: 0">Request for new Pan Card or Correction</h5>
+            <p style="font-style: italic; margin-top: 0">
+                Field marked with asterik(<span>*</span>) is mandatory
+            </p>
+        </div>
+        <div style="font-weight: bold">
+            <table style="width: 100%">
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <span>*</span>Whether Citizen of India
+                        <div style="display: inline; padding-left: 200px">
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="Indian-citizen" id="yes" />
+                            <label for="no" style="padding-left: 20px">No</label>
+                            <input type="radio" name="Indian-citizen" id="No" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <span>*</span>Permananent Account Number
+                        <div style="display: inline">
+                            <label for="PAN">(PAN)</label>
+                            <input type="text" name="PAN" id="PAN" />
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input type="checkbox" name="name-check" id="name-check" /></td>
+                    <td colspan="2"><span>*</span>1. Name</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        Title
+                        <div style="display: inline; padding-left: 50px">
+                            <label for="Shri/mr">Shri/Mr</label>
+                            <input type="radio" name="salutation" id="Shri/mr" />
+                            <label for="Smt/mrs" style="padding-left: 20px">Smt./Mrs.</label>
+                            <input type="radio" name="salutation" id="Smt/mrs" />
+                            <label for="Kumari/ms" style="padding-left: 20px">Kumari/Ms</label>
+                            <input type="radio" name="salutation" id="Kumari/ms" />
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+
+                        <div style="display: inline;">
+                            <label for="lastName">Last Name/Surname</label>
+                            <input type="text" id="lastName" />
+                        </div>
+                        <div style="display: inline;">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" />
+                        </div>
+                        <div style="display: inline;">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" id="middleName" />
+                        </div>
+
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
